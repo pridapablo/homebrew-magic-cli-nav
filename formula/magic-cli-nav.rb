@@ -3,7 +3,7 @@ class MagicCliNav < Formula
   homepage "https://github.com/pridapablo/homebrew-magic-cli-nav"
   url "http://github.com/pridapablo/homebrew-magic-cli-nav/archive/v0.0.1.tar.gz"
   sha256 "e9c06d9d4f6819b8790d591f0ef0c8aabc5f68e944b179a8a5b248afd3ae3daf"
-  head "https://github.com/username/homebrew-magic-cli-nav.git"
+  head "https://github.com/pridapablo/homebrew-magic-cli-nav.git"
 
   bottle :unneeded
   def install
