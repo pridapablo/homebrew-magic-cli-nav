@@ -1,8 +1,8 @@
 class MagicCliNav < Formula
   desc "A command-line tool for enhanced navigation"
   homepage "https://github.com/pridapablo/homebrew-magic-cli-nav"
-  url "http://github.com/pridapablo/homebrew-magic-cli-nav/archive/v0.0.1.tar.gz"
-  sha256 "e9c06d9d4f6819b8790d591f0ef0c8aabc5f68e944b179a8a5b248afd3ae3daf"
+  url "https://github.com/pridapablo/homebrew-magic-cli-nav/archive/refs/tags/v0.0.1-alpha.tar.gz"
+  sha256 "6d1ec92fe18674539ea1da8120f0be28104b1519327cb8a22bccddb1eba6e7f2"
   head "https://github.com/pridapablo/homebrew-magic-cli-nav.git"
 
   bottle :unneeded
