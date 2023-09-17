@@ -13,10 +13,10 @@ brew install magic-cli-nav
 
 ## Usage
 After installation, you can start using magic-cli-nav immediately. Here are some key features:
-# Use the 'lsd' command to list directories with numeric prefixes.
+Use the 'lsd' command to list directories with numeric prefixes.
 lsd
 
-# Use the numeric prefixes (1-9) to quickly switch to a directory.
+Use the numeric prefixes (1-9) to quickly switch to a directory.
 2
 
 The cd command is aliased to chd, which updates the numeric prefixes after changing directories. This means you can continue using the numeric prefixes even after navigating to a different directory.
