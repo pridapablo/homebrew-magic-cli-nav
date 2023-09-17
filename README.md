@@ -25,7 +25,7 @@ lsd
 2
 ```
 
-**Note that when you switch directories using the cd command, the new prefixes will be shown automatically.**
+**Note that when you switch directories using the numeric aliases, the new prefixes will be shown automatically.**
 
 <img width="180" alt="image" src="https://github.com/pridapablo/magic-cli-nav/assets/89087453/c73bdf91-361b-49b3-b2a2-99d51a6a9e91">
 
