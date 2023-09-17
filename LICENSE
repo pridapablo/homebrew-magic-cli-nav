@@ -1,0 +1,14 @@
+class MagicCliNav < Formula
+  desc "A description of your software"
+  homepage "https://github.com/pridapablo/magic-cli-nav"
+  url "https://github.com/pridapablo/magic-cli-nav/archive/main.tar.gz"
+  sha256 "checksum_of_your_release"
+
+  def install
+    bin.install "magic-cli-nav.sh"
+  end
+
+  test do
+    system "#{bin}/magic-cli-nav.sh", "--version"
+  end
+end
