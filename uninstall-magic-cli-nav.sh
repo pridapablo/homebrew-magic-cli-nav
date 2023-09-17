@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
 # Set the script_name and install_path
-script_name="magic-cli-nav.sh"
-install_path="$HOME/.local/bin/$script_name"
+script_name="src/magic-cli-nav.sh"
+install_path="$HOME/.local/bin/magic-cli-nav"
 
 install_path_escaped=$(printf '%s\n' "$install_path" | sed -e 's/[\/&]/\\&/g')
 

@@ -1,11 +1,11 @@
 class MagicCliNav < Formula
-  desc "A description of your software"
+  desc "A command-line tool for enhanced navigation with zsh"
   homepage "https://github.com/pridapablo/magic-cli-nav"
   url "https://github.com/pridapablo/magic-cli-nav/archive/main.tar.gz"
-  sha256 "checksum_of_your_release"
+  sha256 "c29ebe53e51319b49468ec8e0e0732f63d3f965bed456992c2fc997128db60f6"
 
   def install
-    bin.install "magic-cli-nav.sh"
+    bin.install "src/magic-cli-nav.sh"
   end
 
   test do

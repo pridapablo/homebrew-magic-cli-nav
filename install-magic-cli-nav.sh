@@ -1,8 +1,8 @@
 #!/usr/bin/env zsh
 
 # Set magic-cli-nav_name and install_path
-script_name="magic-cli-nav.sh"
-install_path="$HOME/.local/bin/$script_name"
+script_name="src/magic-cli-nav.sh"
+install_path="$HOME/.local/bin/magic-cli-nav"
 
 # Check if magic-cli-nav is already installed
 if [ -f "$install_path" ]; then

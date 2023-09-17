@@ -1,32 +1,22 @@
 class MagicCliNav < Formula
-  desc "A CLI tool to navigate to your project directories with ease"
+  desc "A command-line tool for enhanced navigation"
   homepage "https://github.com/pridapablo/homebrew-magic-cli-nav"
-  url "https://github.com/pridapablo/homebrew-magic-cli-nav/archive/v1.0.tar.gz"
-  sha256 "15dbb1c27178732dea3e11505f39a6ab8a4ab2a4b8cda4e567bcb5b24277199b"
+  url "http://github.com/pridapablo/homebrew-magic-cli-nav/archive/v0.0.1.tar.gz"
+  sha256 "e9c06d9d4f6819b8790d591f0ef0c8aabc5f68e944b179a8a5b248afd3ae3daf"
   head "https://github.com/username/homebrew-magic-cli-nav.git"
 
   bottle :unneeded
-
   def install
     bin.install "magic-cli-nav.sh"
-    (etc/"magic-cli-nav").install "install-magic-cli-nav.sh"
-    
-    # Edit the installation script to use the correct install path
-    inreplace "#{etc}/magic-cli-nav/install-magic-cli-nav.sh", '"$HOME/.local/bin/$script_name"', "#{bin}/magic-cli-nav.sh"
-
-    # Write the final installation instructions to the user's shell configuration file
-    if preferred = [".bash_profile", ".bashrc", ".zshrc"].detect { |rc| File.exist? "#{ENV["HOME"]}/#{rc}" }
-      open("#{ENV["HOME"]}/#{preferred}", "a") do |f|
-        f << "\n# Added by magic-cli-nav install script\n"
-        f << "source #{etc}/magic-cli-nav/install-magic-cli-nav.sh"
-      end
-    end
   end
 
-  def caveats
+  def caveats; 
     <<~EOS
-      You have installed Magic CLI Navigator. To use it, source the install script in your shell:
-      source #{etc}/magic-cli-nav/install-magic-cli-nav.sh
+      The magic-cli-nav script has been installed. 
+      To enable the magic navigation in your shell, add the following
+      line to your .zshrc (or .bashrc/.bash_profile as per your shell) file:
+
+      source #{HOMEBREW_PREFIX}/bin/magic-cli-nav.sh
     EOS
   end
 
